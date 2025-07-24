@@ -34,8 +34,10 @@ form{
 #header{
   background-color: #1d1d1d;
   position: fixed;
-  width: 100%;
-  top: 0;  
+  width: 100px;
+  height: 100px;
+   top: 0;  
+   z-index: -1;
 }
 
 #header h1{
