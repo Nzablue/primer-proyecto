@@ -4,12 +4,20 @@
   padding: 1;
   box-sizing: border-box;
 }
-
+h1 {
+  font-size: 40px;
+}
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Prata', serif;
   background-color: #b4f3ee;
   color: #1d1d1d;
   line-height: 1.6;
+  text-align: center;
+  margin: 100px;
+  }
+
+ul li{
+  text-align: left;
 }
 
 .container{
@@ -18,6 +26,11 @@ body {
   padding: 20px;
 }
 
+form{
+  background-color: white;
+  border: 5px solid #1d1d1d;
+  border-radius: 10px;
+      }
 #header{
   background-color: #1d1d1d;
   position: fixed;
