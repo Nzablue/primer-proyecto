@@ -11,7 +11,8 @@ h1 {
 
 body {
   font-family: 'Prata', serif;
-  background-color: #b4f3ee;
+  background-image: url("assets/img/montanas-al-atardecer-en-el-bosque-3931.jpg");
+  background-size: cover;
   color: #1d1d1d;
   line-height: 1.6;
   text-align: center;
@@ -19,7 +20,7 @@ body {
 }
 
 ul li {
-  text-align: left;
+  text-align: right;
 }
 
 .container {
