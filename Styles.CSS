@@ -4,42 +4,53 @@
   padding: 1;
   box-sizing: border-box;
 }
+
 h1 {
   font-size: 40px;
 }
+
 body {
   font-family: 'Prata', serif;
   background-color: #b4f3ee;
   color: #1d1d1d;
   line-height: 1.6;
   text-align: center;
-  margin: 100px;
-  }
+  margin: px;
+}
 
-ul li{
+ul li {
   text-align: left;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
-form{
+form {
   background-color: white;
   border: 5px solid #1d1d1d;
   border-radius: 10px;
-      }
-#header{
-  background-color: #1d1d1d;
-  position: fixed;
-  width: 100px;
-  height: 100px;
-   top: 0;  
-   z-index: -1;
 }
 
-#header h1{
+header{
+  background-color: #43d75c98;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  text-align: start;
+   z-index: 1;
+   h1{
+    font-size: 30px;
+   }
+}
+header .container{
+   display: flex; 
+   justify-content: space-between;
+  align-items: center;
+  
+}
+header h1 {
   color: #ffffff;
 }
