@@ -7,7 +7,14 @@
 
 h1 {
   font-size: 40px;
-}
+  }
+
+  div#Sobre-Mi{
+    color:white;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+  }
 
 body {
   font-family: 'Prata', serif;
@@ -20,8 +27,10 @@ body {
 }
 
 ul li {
-  text-align: right;
-}
+  text-align: left;
+  color:white;
+  
+  }
 
 .container {
   max-width: 1200px;
@@ -54,4 +63,22 @@ header .container{
 }
 header h1 {
   color: #ffffff;
+    }
+
+div.Proyecto{
+  color: white;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+div.Referencia{
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+}
+
+nav,a{
+  color: rgb(233, 96, 11);
+  text-decoration: none;
 }
