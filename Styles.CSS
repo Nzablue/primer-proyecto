@@ -12,7 +12,7 @@ h1 {
   div#Sobre-Mi{
     color:white;
     text-align: center;
-    width: 700px;
+    width: 500px;
     margin: 0 auto;
   }
 
@@ -74,11 +74,13 @@ div.Proyecto{
 
 div.Referencia{
   text-align: center;
-  width: 700px;
+  width: 500px;
   margin: 0 auto;
 }
 
 nav,a{
-  color: rgb(233, 96, 11);
+  color: rgb(233, 229, 11);
   text-decoration: none;
 }
+
+
