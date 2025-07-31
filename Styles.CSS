@@ -70,6 +70,7 @@ div.Proyecto{
   text-align: center;
   width: 500px;
   margin: 0 auto;
+  
 }
 
 div.Referencia{
@@ -79,8 +80,29 @@ div.Referencia{
 }
 
 nav,a{
-  color: rgb(233, 229, 11);
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  transition: color 0.7s;
 }
 
+nav a:hover { /*Pseudoclases*/
+  color: blue;
+}
 
+nav a::after{
+  content: "";
+  color: blue;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.7s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
