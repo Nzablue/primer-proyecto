@@ -9,9 +9,8 @@ h1 {
   font-size: 40px;
   }
 
-  div#Sobre-Mi{
+  #Sobre-Mi{
     color:white;
-    text-align: center;
     width: 500px;
     margin: 0 auto;
   }
@@ -29,8 +28,7 @@ body {
 ul li {
   text-align: left;
   color:white;
-  
-  }
+    }
 
 .container {
   max-width: 1200px;
@@ -147,7 +145,7 @@ nav a::after{
   position: absolute;
   bottom: -5px;
   left: 0;
-  transition: width 0.7s;
+  transition: width 0.5s;
 }
 
 nav a:hover::after {
@@ -214,3 +212,18 @@ gap: 2rem;
   color: white;
   padding: 0.5rem 1rem;
 }
+
+#header h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#header .container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
+}
+
