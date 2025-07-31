@@ -1,7 +1,7 @@
 /* Reset de Configuraciones - Config base*/
 * {
-  margin: 3;
-  padding: 1;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -19,12 +19,12 @@ h1 {
 body {
   font-family: 'Prata', serif;
   background-image: url("assets/img/montanas-al-atardecer-en-el-bosque-3931.jpg");
+  background-attachment: fixed;
   background-size: cover;
   color: #1d1d1d;
   line-height: 1.6;
   text-align: center;
-  margin: px;
-}
+  }
 
 ul li {
   text-align: left;
@@ -35,10 +35,46 @@ ul li {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 
+.section-container {
+  padding: 4rem 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.section-container:nth-child(even) {
+  background-color: #fbe9e9b1;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-container:nth-child(odd) {
+  background-color: #c8bcbcc8;
+}
+
+.section-container h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgb(35, 199, 240);
+  margin-bottom: 2rem;
+  text-align: center;
+text-transform: uppercase;
+letter-spacing: 2px;
+position: relative;
+}
+
+.section-container h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, rgb(35, 155, 240) 0%, rgb(98, 0, 255) 100%);
+  border-radius: 2px;
+}
 
 form {
   background-color: white;
@@ -116,4 +152,65 @@ nav a::after{
 
 nav a:hover::after {
   width: 100%;
+}
+
+#container-projects {
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+
+.card-project {
+  background-color: #f01414;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s, transform 0,3s;
+}
+
+.card-project img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card-project:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-container p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.skills ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills li{
+  background-color: blue;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 0.5rem 1rem;
 }

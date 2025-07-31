@@ -15,8 +15,8 @@
 
 <body>
 
-
-  <header> <!--contenedor Header/Nav-->
+<!--contenedor Header/Nav-->
+  <header id="header"> 
     <div class="container">
       <h1 style="color:orangered">Portafolio</h1>
       <nav>
@@ -30,27 +30,24 @@
   </header>
 
   </div>
-  <style>
-    h2 {
-      color: darkviolet;
-    }
-  </style>
+  
   <!--secciones-->
   <main>
-    <!--sección sobre nosotros-->
-    <section>
+    <!--sección sobre mi-->
+    <section class="section-container">
       <p id="Sobre Mi">
       <h2>Sobre Mi</h2>
       </p>
 
-      <div>
+      <div class="about-container">
         <img src="assets/img/Nazareno Reyes.jpg" width="200" alt="Foto de Perfil">
         
-        <h3 style="color: blue;">Nazareno Reyes Baccaro</h3>
-        <p style="color:red"><i><strong>Desarrollador de Software</strong></i></p>
+      
       </div>
 
-      <div id="Sobre-Mi">
+      <div class="about-description" id="Sobre-Mi">
+          <h3 style="color: blue;">Nazareno Reyes Baccaro</h3>
+        <p style="color:red"><i><strong>Desarrollador de Software</strong></i></p>
         <p>
           Hola, Mi nombre es Nazareno Reyes Baccaro, 
           tengo 18 años, soy de la ciudad de Paysandú, Uruguay, 
@@ -67,7 +64,7 @@
       <div>
 
       </div>
-      <ul id="Páginas">
+      <ul class="skills" id="Páginas">
         <strong>
           <li>HTML</li>
           <li>CSS</li>
@@ -79,25 +76,26 @@
     </section>
 
     <!--sección proyectos-->
-    <section>
+    <section id="section-projects" class="section-container">
 
       <p id="Proyectos">
       <h2>Proyectos</h2>
       </p>
       <div> <!--Contenedor de Cards-->
 
-        <div> <!--templeate card Project-->
-          <img src="assets/img/Scracth Geometry Dash.jpg" width="350" alt="Imagen del Proyecto">
+        <!--templeate card Project-->
+        <div class="card-project"> 
+          <img src="assets/img/Scracth Geometry Dash.jpg" alt="Imagen del Proyecto">
           <div class="Proyecto">
             <h4>Geometry Dash en Scratch</h4>
             <p>Hicimos en Scratch un Geometry Dash con nivieles y obstáculos y nos creamos un personaje nuevo y funciona
               de lo más bien. Dejo el enalce acá abajo por si quieren probarlo.</p>
-            <a class="links" href="https://scratch.mit.edu/projects/1190399670/">Link del Scratch</a>
+            <a class="links" href="https://scratch.mit.edu/projects/1190399670/">Scratch</a>
           </div>
         </div>
 <br>
 <br>
-        <div>
+        <div class="card-project">
           <img src="" alt="Imagen del Proyecto">
           <div>
             <h4>Proyecto Portafolio NR</h4>
@@ -110,43 +108,43 @@
     </section>
 
     <!--sección blog-->
-    <section>
-      <p id="Blog">
-      <h2>Blog</h2>
-      </p>
+    <section id="section-blog" class="section-container">
+      <p id="Blog"></p>
+        <div class="container">.
+          <div class="blog-header">
+             <h2>Blog</h2>
+             <button class="new-post-btn" type="button">Nuevo Post</button>
+          </div>
+          <div class="blog-list">
 
-      <div>
-        <button>Crear Post</button>
-
-      </div>
-    </section>
-
-    <!--sección referencias-->
-    <section>
-      <p id="Referencias">
-      <h2>Referencias</h2>
-      </p>
-
-      <div>
-
-        <div>
-          <img src="/assets/img/Ailén Silchenko.jpg" width="200px" alt="Imagen de la referencia">
-
-          <div class="Referencia">
-            <p>Es alguien en quien se puede confiar, que se toma las tareas en serio pero también sabe hacerlas más llevaderas. </p>
-            <h4>Ailén Silchenko, Estudiante de Medicina.</h4>
           </div>
         </div>
+      </section>
 
+    <!--sección referencias-->
+    <section id="section-references" class="section-container">
+      <p id="Referencias"></p>
+      <div class="container">
+          <h2>Referencias</h2> 
+          <div id="container-references">
+
+       <div class="card-references">
+          <div class="img-reference"><img src="/assets/img/Ailén Silchenko.jpg" width="200px" alt="Imagen de la referencia"></div>
+         <div class="Referencia"></div>
+          <h4>Ailén Silchenko, Estudiante de Medicina.</h4>
+          <p>Es alguien en quien se puede confiar, que se toma las tareas en serio pero también sabe hacerlas más llevaderas. </p>
       </div>
-    </section>
+
+       </div>
+     </div>
+  </section>
 
     <!--sección contacto-->
-    <section>
-      <p id="Contacto">
-      <h2>Contacto</h2>
-      </p>
-      <p>Pueden compartirme sus opiniones o ideas para mejorar o crear algo más.</p>
+    <section id="section-contact" class="section-container">
+      <p id="Contacto"></p>
+      <div class="container">
+          <h2>Contacto</h2>
+<p>Pueden compartirme sus opiniones o ideas para mejorar o crear algo más.</p>
 
       <form>
         <fieldset>
@@ -170,14 +168,18 @@
       </form>
 
       </form>
-    </section>
-  </main>
-  <footer>
-    <ul>
+      </div>
+       <ul>
       <li><a class="links" href="">Instagram</a></li>
       <li><a class="links" href="">Facebook</a></li>
       <li><a class="links" href="">X</a></li>
     </ul>
+  </section>
+    
+    
+  </main>
+  <footer>
+   
     <p><i>Desarrollado para:</i></p>
     <p style="color:rgb(255, 98, 0)"><i>Jóvenes CreaTIvos 2025</i></p>
     <p><strong>Copyright © 2025</strong></p>
