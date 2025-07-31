@@ -38,6 +38,8 @@ ul li {
   padding: 10px;
 }
 
+
+
 form {
   background-color: white;
   border: 5px solid #1d1d1d;
@@ -79,13 +81,22 @@ div.Referencia{
   margin: 0 auto;
 }
 
-nav,a{
+.links::after {
+  color: #ffffff;
+  text-decoration: none;
+ 
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a{
   color: rgb(255, 255, 255);
   text-decoration: none;
-  display: flex;
-  position: relative;
-  gap: 2rem;
-  transition: color 0.7s;
+    position: relative;
+    transition: color 0.7s;
 }
 
 nav a:hover { /*Pseudoclases*/
@@ -94,7 +105,7 @@ nav a:hover { /*Pseudoclases*/
 
 nav a::after{
   content: "";
-  color: blue;
+  background-color: blue;
   height: 2px;
   width: 0;
   position: absolute;
