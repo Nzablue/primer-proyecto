@@ -106,27 +106,26 @@ div.Proyecto{
   text-align: center;
   width: 500px;
   margin: 0 auto;
-  
-}
+  }
 
 div.Referencia{
   text-align: center;
   width: 500px;
   margin: 0 auto;
+  
 }
 
 .links::after {
   color: #ffffff;
   text-decoration: none;
- 
-}
+ }
 
 nav {
   display: flex;
   gap: 2rem;
 }
 
-nav a{
+nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
     position: relative;
@@ -167,7 +166,7 @@ gap: 2rem;
 }
 
 .card-project img {
-  width: 100%;
+  width: 50%;
   height: 200px;
   object-fit: fill;
   border-radius: 8px;
@@ -193,10 +192,12 @@ gap: 2rem;
   object-fit: cover;
 }
 
+
 .about-container p {
   text-align: justify;
   line-height: 1.8;
 }
+
 
 .skills ul{
   list-style: none;
