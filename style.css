@@ -228,3 +228,24 @@ gap: 2rem;
   padding: 1rem 20px;
 }
 
+.card-references img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.new-post-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.new-post-btn:hover {
+  background-color: #0056b3;
+}
