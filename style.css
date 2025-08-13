@@ -101,14 +101,14 @@ header h1 {
   color: #ffffff;
     }
 
-div.Proyecto{
+.Proyecto{
   color: white;
   text-align: center;
   width: 500px;
   margin: 0 auto;
   }
 
-div.Referencia{
+.Referencia{
   text-align: center;
   width: 500px;
   margin: 0 auto;
@@ -166,7 +166,7 @@ gap: 2rem;
 }
 
 .card-project img {
-  width: 50%;
+  width: 300px;
   height: 200px;
   object-fit: fill;
   border-radius: 8px;
@@ -199,14 +199,14 @@ gap: 2rem;
 }
 
 
-.skills ul{
+#Paginas ul{
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.skills li{
+#Paginas li{
   background-color: blue;
   border-radius: 20px;
   text-align: center;
