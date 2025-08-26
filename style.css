@@ -86,6 +86,12 @@ form {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding: 1.5rem;
+  display: flex;                /* Changed to flex for better centering */
+  flex-direction: column;       /* Stack form elements vertically */
+  align-items: center;         /* Center items horizontally */
+  width: 60%;                  /* Reduce form width to 60% of its container */
+  max-width: 400px;            /* Set maximum width to avoid too wide forms */
+  margin: 0 auto;              /* Center the form horizontally */
 }
 
 form button {
@@ -117,8 +123,8 @@ header .container{
    display: flex; 
    justify-content: space-between;
   align-items: center;
-  
-}
+  }
+
 header h1 {
   color: #ffffff;
     }
@@ -180,11 +186,12 @@ nav a:hover::after {
   width: 100%;
 }
 
-#container-projects {
+#section-projects {
   display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 2rem;
-}
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr, 30px));
+  gap: 1rem;
+  justify-items: center;
+  }
 
 .card-project {
   background-color: #f01414;
@@ -192,10 +199,12 @@ gap: 2rem;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s, transform 0,3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-project img {
-  width: 500px;
   height: 300px;
   object-fit: fill;
   border-radius: 8px;
