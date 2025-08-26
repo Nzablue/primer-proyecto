@@ -198,7 +198,7 @@ nav a:hover::after {
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s, transform 0,3s;
+  transition: box-shadow 0.3s, transform 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
