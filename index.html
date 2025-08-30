@@ -20,15 +20,24 @@
 <!--contenedor Header/Nav-->
   <header id="header"> 
     <div class="container">
+       <nav class="navbar">
       <h1 style="color:orangered">Portafolio Personal</h1>
-      <nav>
-        <a href="#Sobre Mi">Sobre Mi</a>
-        <a href="#Habilidades">Mis Habilidades</a>
-        <a href="#Proyectos">Proyectos</a>
-        <a href="#Blog">Blog</a>
-        <a href="#Referencias">Referencias</a>
-        <a href="#Contacto">Contacto</a>
-      </nav>
+       <ul class="nav-links">
+        <li><a href="#Sobre Mi">Sobre Mi</a></li>
+        <li><a href="#Habilidades">Mis Habilidades</a></li>
+        <li><a href="#Proyectos">Proyectos</a></li>
+        <li><a href="#Blog">Blog</a></li>
+        <li><a href="#Referencias">Referencias</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+      
+      <!-- Botón Hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -80,8 +89,24 @@
       <p id="Habilidades">
       <h2>Mis Habilidades</h2>
       </p>
-
-
+      <div class="container habilidades-container">
+        <div class="skill-HTML">
+          <h3>HTML</h3>
+          <p>90%</p>
+        </div>
+        <div class="skill-CSS">
+          <h3>CSS</h3>
+          <p>80%</p>
+        </div>
+        <div class="skill-JavaScript">
+          <h3>JavaScript</h3>
+          <p>70%</p>
+        </div>
+        <div class="skill-Java">
+          <h3>Java</h3>
+          <p>50%</p>
+        </div>
+      </div>
     </section>
 
     <!--sección proyectos-->
@@ -94,33 +119,30 @@
 
         <!--templeate card Project-->
         <div class="card-project"> 
-          <img src="assets/img/Scracth Geometry Dash.jpg" alt="Imagen del Proyecto">
+          <a href="https://scratch.mit.edu/projects/1190399670/"><img src="assets/img/Scracth Geometry Dash.jpg"></a>
           <div class="Proyecto">
             <h4>Geometry Dash en Scratch</h4>
             <p>Hicimos en Scratch un Geometry Dash con nivieles y obstáculos y nos creamos un personaje nuevo y funciona
               de lo más bien. Dejo el enalce acá abajo por si quieren probarlo.</p>
-            <a class="links" href="https://scratch.mit.edu/projects/1190399670/">Scratch</a>
-          </div>
+            </div>
         </div>
 <br>
 <br>
         <div class="card-project">
-          <img src="assets/img/Presentador Interactivo.jpg" alt="Imagen del Proyecto">
+          <a href="https://nzablue.github.io/HTML-CSS-JS/"><img src="assets/img/Presentador Interactivo.jpg"></a>
           <div class="Proyecto">
             <h4>Proyecto Perfil Personal</h4>
             <p>Este proyecto fue una introducción al JavaScript. Es básico, pero muy lindo.</p>
-            <a class="links" href="https://nzablue.github.io/HTML-CSS-JS/">Link del Proyecto</a>
-          </div>
+            </div>
         </div>
         <br>
         <br>
         <div class="card-project">
-          <img src="assets/img/Ta-Te-Ti.jpg" alt="Imagen del Proyecto">
+          <a href="https://nzablue.github.io/ta-te-ti/"><img src="assets/img/Ta-Te-Ti.jpg"></a>
           <div class="Proyecto">
             <h4>Proyecto Ta Te Ti</h4>
             <p>Este proyecto fue uno de los más codificación tuvo, pero valió la pena porque quedó excelente</p>
-            <a class="links" href="https://nzablue.github.io/ta-te-ti/">Vengan a Jugar</a>
-          </div>
+           </div>
         </div>
       
 
@@ -175,27 +197,27 @@
         </label>
       </form>
 <br>
-      <form>
+      <form id="formulario">
                   
           <label>
             Nombre
             <br>
-            <input type="text" cols="30" rows="10">
+            <input id="Nombre" type="text" cols="30" rows="10">
           </label>
           
           <label>
             Email
             <br>
-            <input type="email" cols="30" rows="10">
+            <input id="Email" cols="30" rows="10">
           </label>
         
           <label>
             Mensaje
             <br>
-            <textarea name="" id="" cols="25" rows="10"></textarea>
+            <textarea id="Mensaje" name="" id="" cols="25" rows="10"></textarea>
           </label>
         <br>
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
          
       </div>
@@ -206,12 +228,12 @@
   </main>
   <footer>
 
-    <a class="links" href=""><img src="assets/img/Instagram_logo_2022.svg.png" width="30px" alt="Instagram"></a>
+    <a class="links" href="https://www.instagram.com/nazablue360/?__pwa=1"><img src="assets/img/Instagram_logo_2022.svg.png" width="30px" alt="Instagram"></a>
     <a class="links" href=""><img src="assets/img/Facebook_f_logo_(2021).svg.png" width="30px" alt="Facebook"></a>
-    <a class="links" href=""><img src="assets/img/twitter_x-logo-freelogovectors.net_.png" width="40px" alt="X"></a>
-    <a class="links" href=""><img src="assets/img/discord-logo-icon-editorial-free-vector.jpg" width="30px" alt="Discord"></a>
-    <a class="links" href=""><img src="assets/img/github-logo-png_seeklogo-304612.png" width="30px" alt="GitHub"></a>
-    <a class="links" href=""><img src="assets/img/Scratch.logo.S.png" width="30px" alt="Scratch"></a>
+    <a class="links" href="https://x.com/Nazablue360"><img src="assets/img/twitter_x-logo-freelogovectors.net_.png" width="40px" alt="X"></a>
+    <a class="links" href="https://discord.com/channels/@me"><img src="assets/img/discord-logo-icon-editorial-free-vector.jpg" width="30px" alt="Discord"></a>
+    <a class="links" href="https://github.com/Nzablue"><img src="assets/img/github-logo-png_seeklogo-304612.png" width="30px" alt="GitHub"></a>
+    <a class="links" href="https://scratch.mit.edu/users/dragonballheroesgame/"><img src="assets/img/Scratch.logo.S.png" width="30px" alt="Scratch"></a>
    
     <p><i>Desarrollado para:</i></p>
     <p style="color:rgb(255, 98, 0)"><i>Jóvenes CreaTIvos 2025</i></p>
