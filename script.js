@@ -1,3 +1,26 @@
+function initSmoothScrolling() {
+    const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+initSmoothScrolling();
+
+
 const form = document.getElementById('formulario')
 const input = document.querySelector('input')
 const ul = document.querySelector('ul')

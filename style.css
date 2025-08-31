@@ -175,7 +175,7 @@ form button:hover {
 }
 
 header {
-  background-color: #43d75c98;
+  background-color: #0c4de598;
   position: sticky;
   width: 100%;
   top: 0;
@@ -360,7 +360,7 @@ header h1 {
 }
 
 footer {
-  background-color: #43d75c98;
+  background-color: #0c4de598;
   padding: 20px;
   text-align: center;
   justify-content: space-between;
