@@ -210,8 +210,9 @@ header h1 {
   justify-content: center;
   width: 100%;
   align-items: center;
-}
+  }
 
+  
 .skill-HTML {
   margin-bottom: 20px;
   padding: 10px;
@@ -221,7 +222,14 @@ header h1 {
   flex-direction: column;
   padding: 1.5rem;
   width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s, transform 0.3s;
 }
+
+.skill-HTML:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+  }
 
 .skill-CSS {
   margin-bottom: 20px;
@@ -232,7 +240,14 @@ header h1 {
   flex-direction: column;
   padding: 1.5rem;
   width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s, transform 0.3s;
 }
+
+.skill-CSS:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+  }
 
 .skill-JavaScript {
   margin-bottom: 20px;
@@ -243,7 +258,14 @@ header h1 {
   flex-direction: column;
   padding: 1.5rem;
   width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s, transform 0.3s;
 }
+
+.skill-JavaScript:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+  }
 
 .skill-Java {
   margin-bottom: 20px;
@@ -254,7 +276,14 @@ header h1 {
   flex-direction: column;
   padding: 1.5rem;
   width: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s, transform 0.3s;
 }
+
+.skill-Java:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-10px);
+  }
 
 .skill h3 {
   font-size: 18px;
