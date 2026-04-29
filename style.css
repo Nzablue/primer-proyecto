@@ -452,7 +452,7 @@ nav a:hover::after {
 
 #section-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   gap: 1rem;
   justify-items: center;
 }
