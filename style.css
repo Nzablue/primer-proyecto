@@ -450,11 +450,11 @@ nav a:hover::after {
   width: 100%;
 }
 
-#section-projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-  gap: 1rem;
-  justify-items: center;
+#section-projects > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .card-project {
