@@ -52,10 +52,11 @@ body {
 /*Version Movil*/
 @media (max-width: 768px) {
   #Sobre-Mi {
-  color: white;
-  width: 200px;
-  margin: 0 auto;
-}
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -63,9 +64,9 @@ body {
   }
 
   .hamburger span {
-    width: 3px;
+    width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin: 4px;
     border-radius: 2px;
   }
@@ -79,6 +80,38 @@ body {
     background: rgb(242, 162, 12);
     padding: 10px;
     border-radius: 8px;
+    text-align: center;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  /* Ajustes para la sección Sobre Mi en móvil */
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+  }
+
+  /* Ajustes para Proyectos y Referencias */
+  .Proyecto, .Referencia {
+    width: 100%;
+  }
+
+  .card-project img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Ajustes para Habilidades */
+  .skill-HTML, .skill-CSS, .skill-JavaScript, .skill-Java {
+    width: 90%;
+  }
+
+  /* Ajustes para Formulario de Contacto */
+  form {
+    width: 90%;
   }
 }
 
@@ -419,7 +452,7 @@ nav a:hover::after {
 
 #section-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr, 30px));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   justify-items: center;
 }
